@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitap Detay</title>
+    <link rel="stylesheet" href="./global.css" />
+    <!-- Küçük ekranlar için CSS -->
+    <link
+      rel="stylesheet"
+      href="indir_mobil_index.css"
+      media="screen and (max-width: 767px)"
+    />
+    <!-- Orta boyutlu ekranlar için CSS -->
+    <link
+      rel="stylesheet"
+      href="indir_Tablet_index.css"
+      media="screen and (min-width: 768px) and (max-width: 1440px)"
+    />
+    <!-- Büyük ekranlar için CSS -->
+    <link
+      rel="stylesheet"
+      href="indir_Desktop_index.css"
+      media="screen and (min-width: 1440px)"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./indir_style.css" />
+    <script src="indir_script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="menu__box">
+            <li>
+              <a class="menu__item" href="./index.html">ANASAYFA</a>
+            </li>
+            <li><a class="menu__item" href="#">KATEGORİLER</a></li>
+            <li>
+              <a class="menu__item" href="./Hakkimizda_index.html"
+                >HAKKIMIZDA</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="logo"><a href="./index.html">PALLAS</a></div>
+      </nav>
+    </div>
+    <div class="indirme-sayfasi">
+      <div class="bilgi">
+        <div class="kunye">
+          <div class="kitap-adi" id="kitap-adi"></div>
+          <div class="yazar-yayinci">
+            <div class="yazar" id="yazar"></div>
+            <div class="ayrac">|</div>
+            <div class="yayinci" id="yayinevi"></div>
+          </div>
+          <div class="alt-kunye">
+            <i class="sayfa">Sayfa: <span id="sayfa"></span></i>
+            <i class="yayin-yili">Yayın Yılı: <span id="yayin-yili"></span></i>
+            <i class="isbn">ISBN: <span id="isbn"></span></i>
+          </div>
+        </div>
+        <div class="ozet" id="ozet">
+          <!-- Buraya kitap açıklaması gelecek -->
+        </div>
+      </div>
+      <div class="indir-blok">
+        <div class="ndir">
+          <div class="indir" id="indirmeButon">İNDİR</div>
+        </div>
+        <div class="soz">
+          <div class="line"></div>
+          <div class="scientia-vincere">SCIENTIA VINCERE</div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <img
+        class="kitap-resim"
+        id="kitapResim"
+        src="./kapaklar/placeholder.jpg"
+      />
+      <div class="pattern-container">
+        <img class="pattern" src="./images/pattern.svg" />
+      </div>
+    </div>
+  </body>
+</html>

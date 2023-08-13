@@ -1,0 +1,234 @@
+.kategoriler-sayfa {
+  position: relative;
+  background-color: var(--color-oldlace);
+  width: 100%;
+  height: 1719px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-black);
+  font-family: "Lato", Arial, sans-serif;
+}
+
+.line {
+  position: absolute;
+  width: 93.75%;
+  top: 691px;
+  right: 3%;
+  left: 3%;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  height: 1px;
+}
+.uzay-icon {
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.uzay1 {
+  position: absolute;
+  width: 78.93%;
+  top: 0;
+  left: 21.07%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  color: #000;
+}
+
+.uzay {
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: #ece9d2;
+  width: 263px;
+  height: 90px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.uzay:hover {
+  background-color: #556b2f;
+}
+
+.uzay:hover .uzay1 {
+  color: #fdf6e3;
+}
+.uzay1 a,
+.uzay1 a:visited {
+  color: inherit; /* Bağlantı rengini üst öğeden devralır */
+}
+
+.kategori-bloklari {
+  position: absolute;
+  top: 723px;
+  left: calc(50% - 410px);
+  width: 817px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14px;
+  font-size: var(--font-size-13xl);
+}
+.filtre {
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
+}
+.filtre-blok {
+  position: absolute;
+  top: 653px;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 32px;
+  font-size: 16px;
+  font-family: "ALATA"; /* mübahı latodur ama ğ leri yokediyor */
+}
+.filtre-blok,
+.kategoriler,
+.kategoriler1 {
+  display: flex;
+  align-items: center;
+  left: 3%;
+}
+.kategoriler1 {
+  width: 749px;
+  flex-shrink: 0;
+}
+.kategoriler {
+  position: absolute;
+  top: 575px;
+  width: 749px;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: left;
+  font-family: var(--font-alata);
+  font-size: 36px;
+}
+.yesil-kare {
+  position: absolute;
+  width: 93.15%;
+  top: 140px;
+  right: 4.38%;
+  left: 2.46%;
+  background-color: #556b2f;
+  height: 215px;
+}
+.kategoriler-resim {
+  position: absolute;
+  top: 105px;
+  left: calc(50% + 37px);
+  width: 257px;
+  height: 365px;
+  object-fit: cover;
+}
+.resim-aciklama {
+  top: 470px;
+  left: calc(50% + 35px);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
+  height: 25px;
+  font-family: "Lato";
+}
+.header,
+.logo,
+.resim-aciklama {
+  position: absolute;
+}
+.logo {
+  top: 4px;
+  left: calc(50% - 112px);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 224px;
+  height: 86px;
+}
+.header {
+  width: 100%;
+  height: 94px;
+  background-color: var(--color-oldlace);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+}
+p {
+  margin: 0;
+}
+.ana-slogan-txt {
+  line-break: anywhere;
+  width: 100%;
+  font-size: 22px;
+  padding-top: 32px;
+}
+.alinti,
+.ana-slogan {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 415px;
+  top: 16px;
+}
+.alinti {
+  font-size: var(--font-size-base);
+  font-family: var(--font-lato);
+  justify-content: center;
+  padding-top: 8px;
+}
+.soz {
+  position: absolute;
+  top: 120px;
+  left: calc(50% - 385px);
+  width: 1188px;
+  height: 269px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: var(--color-oldlace);
+  font-family: var(--font-alata);
+}
+.pattern {
+  position: absolute;
+  top: 1605px;
+  left: 0;
+  width: 5236px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.pattern1 {
+  position: absolute;
+  top: 509px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Altınca çizgi için ::after seçicisini kullanıyoruz */
+.filtre-blok .filtre:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #556b2f; /* Koyu yeşil çizgi rengi */
+}

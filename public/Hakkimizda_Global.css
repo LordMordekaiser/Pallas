@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-lato: Lato;
+  --font-alata: Alata;
+
+  /* font sizes */
+  --font-size-13xl: 32px;
+  --font-size-45xl: 64px;
+  --font-size-5xl: 24px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-oldlace: #fdf6e3;
+  --color-darkolivegreen: #556b2f;
+}
+
+.logo a {
+  text-decoration: none; /* Altı çiziyi kaldırma */
+  color: black; /* Yazı rengini değiştirme */
+}

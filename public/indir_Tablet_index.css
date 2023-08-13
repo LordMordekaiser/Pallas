@@ -1,0 +1,237 @@
+.header {
+  width: 100%;
+  height: 94px;
+  background-color: var(--color-oldlace);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.ozet {
+  position: absolute;
+  top: 208px;
+  left: 0;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  width: 761px;
+  font-family: "Lato", sans-serif;
+}
+.kitap-adi {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.05em;
+}
+.ayrac,
+.yazar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.yayinci {
+  position: relative;
+}
+.yazar-yayinci {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: var(--font-size-5xl);
+}
+.isbn,
+.yayin-yili,
+.sayfa {
+  position: relative;
+  display: flex;
+  font-weight: 300;
+  align-items: center;
+  flex-shrink: 0;
+}
+.alt-kunye,
+.kunye {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.alt-kunye {
+  align-items: stretch;
+  flex-direction: row;
+  font-size: var(--font-size-base);
+  font-family: var(--font-lato);
+}
+.kunye {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 761px;
+  height: 208px;
+  flex-direction: column;
+  font-size: 36px;
+  font-family: var(--font-alata);
+}
+.bilgi {
+  top: 886px;
+  left: calc(50%);
+  width: 761px;
+  height: 683px;
+  text-align: left;
+  font-size: 20px;
+  font-family: var(--font-lato);
+}
+.bilgi,
+.indir,
+.ndir {
+  position: absolute;
+}
+.indir {
+  top: 1px;
+  left: 1px;
+  letter-spacing: 0.15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 379px;
+  height: 45px;
+}
+.ndir {
+  top: 0;
+  left: calc(50% - 190px);
+  border-radius: 3px;
+  background-color: var(--color-darkolivegreen-100);
+  width: 380px;
+  height: 48px;
+  overflow: hidden;
+}
+.line {
+  position: relative;
+  border-top: 1px solid;
+  box-sizing: border-box;
+  width: 97px;
+  height: 1px;
+}
+.scientia-vincere {
+  position: relative;
+  letter-spacing: 0, 15em;
+  font-family: "alata";
+  letter-spacing: 2px;
+}
+.soz {
+  position: absolute;
+  top: 69px;
+  left: calc(50% - 190px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  font-size: 12px;
+  color: var(--color-black);
+}
+.indir-blok {
+  position: absolute;
+  top: 1388px;
+  right: calc(50%);
+  width: 380px;
+  height: 86px;
+  font-size: var(--font-size-13xl);
+  color: white;
+  font-family: "alata";
+}
+.kitap-resim {
+  position: absolute;
+  top: 199px;
+  left: calc(50% - 178px);
+  border-radius: 10px;
+  width: 385px;
+  height: 550px;
+  /* object-fit: cover; */
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.pattern {
+  position: absolute;
+  top: 1560px;
+  /* bu iş böyle olmaz deniyoruz */
+  left: 0;
+  width: 100%;
+  min-height: 50px;
+  /* min-width: 5236px; */
+  padding-bottom: 64px;
+}
+.kitap-indirme-sayfasi {
+  position: relative;
+  background-color: #fdf6e3;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  font-size: 64px;
+  color: var(--color-black);
+  font-family: var(--font-alata);
+}
+
+.bilgi {
+  position: absolute;
+  top: calc(199px + 550px + 157px);
+  left: calc(50% - 380px);
+  width: 761px;
+  text-align: left;
+  font-size: 20px;
+  font-family: var(--font-lato);
+}
+
+/*künyedeki sıralamayı düzeltiyor*/
+
+.alt-kunye {
+  position: absolute;
+  top: 139px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  font-family: var(--font-lato);
+}
+
+.yazar-yayinci {
+  top: 88px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: var(--font-size-5xl);
+}
+.kitap-adi,
+.kunye,
+.yazar-yayinci {
+  position: absolute;
+  left: 0;
+}
+body {
+  background-color: #fdf6e3;
+}
+
+/*overflow engellenmek için*/
+.pattern-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pattern-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

@@ -1,0 +1,47 @@
+.search {
+  display: inline-block;
+  position: relative;
+  padding-top: 14px;
+  cursor: pointer;
+}
+
+.search:after {
+  content: "";
+  background: black;
+  width: 3px;
+  height: 9px;
+  position: absolute;
+  top: 35px;
+  right: 2px;
+  transform: rotate(140deg);
+  border-radius: 1px;
+}
+
+.search > input {
+  color: black;
+  font-family: "alata";
+  font-size: 16px;
+  background: transparent;
+  width: 2px;
+  height: 2px;
+  padding: 10px;
+  border: solid 2px black;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+  cursor: pointer;
+}
+
+.search > input::placeholder {
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.search > input:focus::placeholder {
+  opacity: 1;
+}
+
+.search > input:focus,
+.search > input:not(:placeholder-shown) {
+  width: 250px;
+}

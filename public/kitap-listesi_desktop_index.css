@@ -1,0 +1,284 @@
+.pattern {
+  position: absolute;
+  top: 825px;
+  left: 0;
+  width: 5236px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.pattern1 {
+  position: absolute;
+  top: 2634px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pattern2 {
+  position: absolute;
+  top: 3048px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bilgilendirme-txt {
+  margin: 0;
+  width: 100%;
+  top: 62px;
+  display: flex;
+  align-items: center;
+  /* width: 1139px; */
+  font-size: 30px;
+}
+
+.bilgilendirme-baslik {
+  font-size: var(--font-size-13xl);
+  text-align: right;
+}
+
+.bilgilendirme {
+  position: absolute;
+  top: 2748px;
+  left: calc(50%);
+  transform: translateX(-50%);
+  height: 236px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  font-family: "Lato", Arial, sans-serif;
+  letter-spacing: -0.01em;
+  gap: 16px;
+}
+
+.kitap-kapak {
+  border-radius: 3px;
+  width: 195px;
+  height: 308px;
+  object-fit: cover;
+}
+
+.kitap-adi {
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 195px;
+  color: black;
+  margin-bottom: 14px;
+  text-decoration: none; /* Eklediğimiz satır: Metni link gibi gösterme */
+}
+.kitap-adi:visited {
+  color: black; /* ziyaret edilmiş sayfanın rengi */
+}
+
+.yazar {
+  left: 0;
+  font-size: var(--font-size-base);
+  color: #a9b089;
+}
+
+.kitap {
+  position: relative;
+  width: 195px;
+  height: 412px;
+}
+
+.kitaplar-blok {
+  position: absolute;
+  top: 1063px;
+  /* left: calc(50% - 556px); */
+  left: calc(50%);
+  transform: translateX(-50%);
+  width: 1103px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+}
+
+.kategori-adi {
+  cursor: pointer;
+}
+
+.siralama {
+  position: relative;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.siralama-secenekleri {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 64px;
+  font-size: var(--font-size-base);
+  font-family: "ALATA"; /* mübahı latodur ama ğ leri yokediyor */
+}
+
+.siralama-blok {
+  position: absolute;
+  top: 941px;
+  left: calc(50% - 556px);
+  font-size: 36px;
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+.siralama-blok .siralama:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #556b2f; /* Koyu yeşil çizgi rengi */
+}
+
+.pallas-kitap-listesi-desktop-child {
+  position: absolute;
+  width: 1096px;
+  left: 0px;
+  top: 71px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-spacing: border-box;
+  height: 1px;
+}
+
+.alinti {
+  position: absolute;
+  top: calc(50% - 953px);
+  left: calc(50%);
+  transform: translateX(-50%);
+  letter-spacing: -0.01em;
+  font-family: "lato";
+}
+
+.resim-felsefe {
+  position: absolute;
+  top: calc(50% - 1391px);
+  left: calc(50%);
+  transform: translateX(-50%);
+  width: 1219px;
+  height: 422px;
+  object-fit: cover;
+}
+
+.header,
+.logo {
+  position: absolute;
+}
+.logo {
+  top: 4px;
+  left: calc(50% - 112px);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 224px;
+  height: 86px;
+}
+.header {
+  width: 100%;
+  height: 94px;
+  background-color: var(--color-oldlace);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.kitap-listesi-sayfa {
+  position: relative;
+  background-color: var(--color-oldlace);
+  width: 100%;
+  height: 3226px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: "Alata", Arial, sans-serif;
+}
+
+/* Sayfalama düğmelerinin düzenler */
+.paging-bar .sayi {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.paging-bar {
+  position: absolute;
+  top: 2474px;
+  /* left: calc(50% - 50px); */
+  left: calc(50%);
+  transform: translateX(-50%);
+  height: 96px;
+  font-size: var(--font-size-base);
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.sayilar {
+  display: flex;
+  align-items: center;
+}
+
+.sayi {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-family: var(--font-alata);
+  cursor: pointer;
+}
+
+.sayi:hover {
+  background-color: #556b2f;
+  color: #fdf6e3;
+}
+
+/* Sayfa numaralarının çevresindeki çizgi ve okların stili */
+.paging-bar-oklar {
+  position: absolute;
+  top: 2474px;
+  left: calc(50% - 570px);
+  height: 96px;
+  display: flex;
+  align-items: center;
+}
+
+.line,
+.line1 {
+  width: 1px;
+  height: 96px;
+  border-right: 1px solid black;
+  margin: 0 16px; /* İki line arası mesafe 32px */
+}
+
+.line1 {
+  margin-left: 980px;
+}
+
+.arrow-l,
+.arrow-r {
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  margin: 0 16px; /* Arrowlar ile line'lar arasındaki mesafe 32px */
+}
+
+a {
+  text-decoration: none; /* Altını çizmeyi kaldır */
+}

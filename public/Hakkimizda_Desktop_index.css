@@ -1,0 +1,128 @@
+.paragraflar {
+  position: absolute;
+  width: 65%;
+  top: 955px;
+  right: 16%;
+  left: 16%;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  font-family: "Lato", sans-serif;
+}
+.ilk-harf {
+  font-size: 64px;
+}
+.pattern {
+  position: absolute;
+  bottom: 64px;
+  left: 0;
+  width: 100%;
+  min-height: 50px;
+  min-width: 5236px;
+}
+
+.ana-slogan,
+.sokrates {
+  align-self: stretch;
+  position: relative;
+}
+.sokrates {
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkolivegreen);
+}
+.slogan {
+  position: absolute;
+  width: 85%;
+  top: 645px;
+  right: 8%;
+  left: 8%;
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--font-size-45xl);
+  font-family: var(--font-alata);
+}
+.float-icon {
+  position: fixed;
+  top: calc(35%);
+  right: 85px;
+  width: 32px;
+  height: 128px;
+  z-index: 999;
+}
+.float-icon img {
+  margin-bottom: 16px;
+}
+.float-icon a {
+  display: inline-block;
+  margin: 5px; 
+  opacity: 1; 
+  transition: opacity 0.3s;
+}
+
+.float-icon a:hover {
+  opacity: 0.5; /* Geçiş durumunda görünürlüğü %50 düşürür */
+}
+.resim {
+  position: absolute;
+  top: 158px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1210px;
+  height: 381px;
+  object-fit: cover;
+  height: auto;
+  object-fit: cover; /* Resmin içeriğinin tamamen görünebilmesi için sığdırma işlemi yapar */
+}
+.logo,
+.resim-aciklama {
+  position: absolute;
+  top: 552px;
+  left: calc(50% - 216px);
+  letter-spacing: -0.01em;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.logo {
+  top: 4px;
+  left: calc(50%);
+  font-size: var(--font-size-45xl);
+  font-family: var(--font-alata);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 224px;
+  height: 86px;
+}
+.Hakkimizda {
+  position: relative;
+  background-color: var(--color-oldlace);
+  width: 100%;
+  height: 2210px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+
+.header {
+  width: 100%;
+  height: 94px;
+  background-color: var(--color-oldlace);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+}
