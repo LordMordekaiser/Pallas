@@ -19,7 +19,7 @@ http://localhost:3000/
 
 -Popülerliğe göre sırala seçeneği yerine daha mantıklı bir seçenek lazım
 
--Son Eklenenler hala başarısız DB den ID ye göre büyükten küçüğe sıralamak lazım
+-Son Eklenenler hala başarısız DB den ID ye göre büyükten küçüğe sıralamak lazım (kitap-siralama.js)
 
 
 
