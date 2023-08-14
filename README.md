@@ -1,7 +1,7 @@
 # Pallas
 Pdf Kitap İndirme Sitesi
 
--Siteyi çalıştırmak için aşağıdaki komutu terminale gir
+-Siteyi çalıştırmak için aşağıdaki komutu terminale girin
 node server.js
 
 -Siteyi kapatmak için aynı terminalde Ctrl+C
