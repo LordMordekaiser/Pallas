@@ -21,6 +21,8 @@ http://localhost:3000/
 
 -Son Eklenenler hala başarısız DB den ID ye göre büyükten küçüğe sıralamak lazım (kitap-siralama.js)
 
+- kitap_son_eklenenler.js dosyasını kitap_listesi_index.html üzerinden aktive edince sıralamayı başarılı bir şekilde yapıyor ama her kategoriden max 13 kitap ekranda gözüküyor. 2. sayfa ve kalan kitaplar kayboluyor.
+
 
 
 //DB Browser for SQLite 
