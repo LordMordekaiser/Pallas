@@ -1,3 +1,5 @@
+//Bu kodu kitap_listesi_index.html dosyasında aktive edince son eklenenler başarılı bir şekilde görünüyor ama databaseden her kategori için sadece 13 kitap çekiliyor.
+
 // Son eklenen kitapları çekme işlemi
 function sonEklenenKitaplariCek(siralama, kategoriAdi) {
   return fetch("/sonEklenenler")
